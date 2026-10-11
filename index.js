@@ -1,4 +1,3 @@
-// Ganz oben als allererstes einfügen:
 require('dotenv').config();
 
 const {
@@ -34,7 +33,7 @@ const commands = [
         )
 ];
 
-client.once('ready', async () => {
+client.once('clientReady', async () => {
     console.log(`Bot ${client.user.tag} ist online!`);
     const rest = new REST({ version: '10' }).setToken(token);
     try {
